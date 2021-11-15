@@ -1,0 +1,13 @@
+mat-form-field {
+  height: 2rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  .form-select {
+    width: 100%;
+  }
+}

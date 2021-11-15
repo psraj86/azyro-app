@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="topFilter" fxLayout="row" fxLayout.xs="column" >
+    <span class="mb-2">ESG Integration Dashboard</span>
+    <app-filter></app-filter>
+  </div>
+  <mat-divider class="mt-2"></mat-divider>
+</div>
+<div class="container">
+  <div class="widget" fxLayout="row" fxLayout.xs="column">
+    <app-widget *ngFor="let item of data" [widgetData]="item"></app-widget>
+  </div>
+  <div *ngIf="currentUser.userType==='enterprise'">
+    <app-pie-chart></app-pie-chart>
+
+    <div class="row mt-3 mb-3">
+      <div class="col-md-7 mt-2">
+        <app-bar-chart></app-bar-chart>
+      </div>
+      <div class="col-md-5 mt-2">
+        <app-radar-chart></app-radar-chart>
+      </div>
+    </div>
+  </div>
+</div>

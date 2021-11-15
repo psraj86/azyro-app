@@ -1,0 +1,23 @@
+mat-card {
+	.header {
+    margin: 0 0 1.5rem 0;
+    font-size: 1rem;
+  }
+
+	.amount {
+		font-size: 3rem;
+		font-weight: bold;
+    margin: 0 0 1.5rem 0;
+	}
+
+  .footer {
+    display: flex;
+    justify-content: start start;
+    font-size: 1rem;
+    align-items: center;
+    color: #53d553;
+
+  }
+
+
+}

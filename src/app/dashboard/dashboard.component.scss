@@ -1,0 +1,22 @@
+.widget {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 1rem 0;
+  app-widget {
+    flex: 1 1 auto;
+
+  }
+}
+
+.topFilter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
